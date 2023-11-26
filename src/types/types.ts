@@ -6,6 +6,6 @@ export type StatisticItem = {
     link: string;
     premium: number;
     subject: string;
-    teaser_image_urls: { url: string }[];
+    teaser_image_urls: { width: number; src: string }[];
     title: string;
 };

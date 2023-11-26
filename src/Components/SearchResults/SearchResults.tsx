@@ -9,7 +9,7 @@ const SearchResults = ({statistics}:SearchResultsType) =>{
 
 
     return statistics?.map((statistic:StatisticItem,index:number)=>(
-        <SearchItem statistic={statistic} index={index}/>
+        <SearchItem statistic={statistic} key={index}/>
     ));
 };
 
