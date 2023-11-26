@@ -8,8 +8,8 @@ const SearchResults = ({statistics}:SearchResultsType) =>{
     if(!statistics) return null
 
 
-    return statistics?.map((statistic:StatisticItem)=>(
-        <SearchItem statistic={statistic}/>
+    return statistics?.map((statistic:StatisticItem,index)=>(
+        <SearchItem statistic={statistic} key={index}/>
     ));
 };
 
