@@ -5,11 +5,11 @@ import { StatisticItem } from '@/types/types';
 
 type SearchItemType = {
     statistic: StatisticItem;
-    index: number;
+    key: number;
 };
 
-const SearchItem: React.FC<SearchItemType> = ({ statistic, index }) => (
-    <li className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative" key={index}>
+const SearchItem: React.FC<SearchItemType> = ({ statistic, key }) => (
+    <li className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative" key={key}>
         <Link href={`/${statistic.identifier}`}>
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{statistic.title}</h5>
         </Link>

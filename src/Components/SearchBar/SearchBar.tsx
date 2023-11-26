@@ -25,9 +25,6 @@ const SearchBar = ({ setQuery }: SearchBarType) => {
 
     return (
         <form className="relative m-10">
-            <label htmlFor="default-search" className="sr-only">
-                Search
-            </label>
             <div className="flex items-center absolute inset-y-0 start-0 ps-3 pointer-events-none">
                 <svg
                     className="w-4 h-4 text-gray-500 dark:text-gray-400"
