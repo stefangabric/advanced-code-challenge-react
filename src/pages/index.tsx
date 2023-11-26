@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react';
-import Layout from "@/Components/Layout/Layout";
+import Search from "@/Components/Search/Search";
 
 export default function Home(): ReactElement | null {
 
   return (
-        <Layout/>
+      <Search/>
   )
 }
