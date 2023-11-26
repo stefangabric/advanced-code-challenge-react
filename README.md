@@ -13,7 +13,11 @@ After that, run the development server:
 ```bash
 npm run dev
 ```
+For running unit test we can run :
 
+```bash
+npm run test:ci
+```
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
