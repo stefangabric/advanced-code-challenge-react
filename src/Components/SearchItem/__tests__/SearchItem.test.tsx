@@ -35,13 +35,13 @@ jest.mock('../../FavoriteBadge/FavoriteBadge', () => ({
 }));
 describe('SearchItem component', () => {
     it('renders SearchItem correctly', () => {
-        render(<SearchItem statistic={mockStatistic} key={1} />);
+        render(<SearchItem statistic={mockStatistic} />);
         expect(screen.getByText('India: major investing countries 2019')).toBeInTheDocument();
         expect(screen.getByText('Leading countries for foreign direct investment into India from financial year 2013 to 2019 (in million U.S. dollars)')).toBeInTheDocument();
     });
 
     it('navigates to details page when clicked', () => {
-        render(<SearchItem statistic={mockStatistic} key={1} />);
+        render(<SearchItem statistic={mockStatistic} />);
 
         userEvent.click(screen.getByText('Details'));
         // console.log(window.location.href)

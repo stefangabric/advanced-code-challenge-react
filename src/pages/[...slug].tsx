@@ -9,7 +9,7 @@ const Pages = ({slug}:PagesType) => {
     const { favoriteList } = useFavorite();
     if(slug==="favorites") {
         return (<ul className="flex flex-wrap">
-            {favoriteList.map((favorite,index)=><SearchItem statistic={favorite} key={index}/>)}
+            {favoriteList.map((favorite)=><SearchItem statistic={favorite}/>)}
         </ul>)
     }
 
